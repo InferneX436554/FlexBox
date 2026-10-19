@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: #111315;
+    color: #378064;
+    line-height: 1.6;
+}
+
+.encabezado {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #34383b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    display: grid;
+    place-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid #d5ff40;
+    color: #d5ff40;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navegacion a {
+    color: #aaaaa5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #d5ff40;
+}
+
+.presentacion {
+    width: min(1180px, 92%);
+    min-height: 650px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.texto-presentacion {
+    flex: 1;
+    max-width: 650px;
+}
+
+.etiqueta {
+    color: #d5ff40;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 0.95;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #d5ff40;
+}
+
+.texto-presentacion > p:not(.etiqueta) {
+    max-width: 520px;
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 24px;
+
+    background: #d5ff40;
+    color: #111315;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+}
+
+.figura {
+    width: 330px;
+    height: 430px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #34383b;
+    transform: rotate(4deg);
+}
+
+.figura-centro {
+    width: 210px;
+    height: 210px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #d5ff40;
+    color: #111315;
+
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    transform: rotate(-4deg);
+}
+
+.seccion-galeria {
+    background-image: url(../assets/images/abstract-black-polygon-green-light-futuristic-technology-design-background-vector.jpg) ;
+    color: #44ce89;
+    padding: 100px 4%;
+}
+
+.titulo-seccion {
+    width: min(1180px, 100%);
+    margin: 0 auto 50px;
+}
+
+.titulo-seccion .etiqueta {
+    color: #5c6800;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.titulo-seccion > p:last-child {
+    max-width: 600px;
+    color: #5e625c;
+}
+
+.galeria {
+    width: min(1180px, 100%);
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.tarjeta {
+    position: relative;
+
+    flex: 1 1 250px;
+    min-height: 330px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: #1a1d1c;
+    color: #2a9259;
+
+    overflow: hidden;
+}
+/*Desde aqui empiezo a ocupar algunas herramientas de FlexBox*/
+.tarjeta-grande {
+    flex: 2 1 400px;
+}
+
+.tarjeta-ancha {
+    flex: 2 1 400px;
+}
+
+.numero {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    color: #70756e;
+    font-size: 0.8rem;
+}
+
+.icono {
+    color: #d5ff40;
+    font-size: 3rem;
+    margin-bottom: auto;
+}
+
+.tarjeta h3 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #aeb2ac;
+    font-size: 0.95rem;
+}
+
+.explicacion {
+    width: min(1180px, 92%);
+    margin: auto;
+    padding: 110px 0;
+}
+
+.explicacion-titulo {
+    margin-bottom: 55px;
+}
+
+.conceptos {
+   /*En esta linea estoy usando display para que sea mas facil orientar, organizar, y ajustar
+    las dimenciones y en que lugar van los elementos*/
+    display: flex;
+     /*Aquí por ejemplo utilizo la funcion warp para que el elemento se transporte
+    a otra linea en caso de no haber espacio para que lo ocupe*/
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.concepto {
+    flex: 1 1 210px;
+    padding-top: 20px;
+
+    border-top: 1px solid #3b3f40;
+}
+
+.concepto strong {
+    color: #d5ff40;
+    font-size: 0.8rem;
+}
+
+.concepto h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+}
+
+.concepto p {
+    color: #929791;
+    font-size: 0.9rem;
+}
+
+.pie {
+    padding: 30px 4%;
+
+    display: flex;
+    /*Aquí ocupo FlexBox para separar cada elemento en el contenedor y 
+    que se vea de mejor manera*/
+    justify-content: space-between;
+    /*Con esto coloco los elementos del contenedor centrados de una mejor manera*/
+    align-items: center;
+    gap: 20px;
+
+    border-top: 1px solid #34383b;
+
+    color: #777c76;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+
+    .encabezado {
+        /*Aquí estoy cambiando la orientación del encabezado para
+         que los elementos se coloquen en columnas*/
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacion {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .texto-presentacion > p:not(.etiqueta) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .figura {
+        width: 250px;
+        height: 300px;
+    }
+
+    .figura-centro {
+        width: 160px;
+        height: 160px;
+        font-size: 2rem;
+    }
+
+    .tarjeta,
+    .tarjeta-grande,
+    .tarjeta-ancha {
+        flex: 1 1 100%;
+    }
+
+    .pie {
+        flex-direction: column;
+        text-align: center;
+    }
+}

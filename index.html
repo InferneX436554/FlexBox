@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Creativa | Práctico de Flexbox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            <span>Galería Creativa</span>
+        </div>
+
+        <nav class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#sobre">Sobre el proyecto</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="inicio" class="presentacion">
+
+            <div class="texto-presentacion">
+                <p class="etiqueta">PRÁCTICO 1 · FLEXBOX</p>
+
+                <h1>
+                    Diseñamos ideas,
+                    <span>organizamos espacios.</span>
+                </h1>
+
+                <p>
+                    Esta página fue creada para demostrar el uso de
+                    Flexbox en el diseño y la distribución de diferentes
+                    elementos dentro de una página web.
+                </p>
+
+                <a href="#galeria" class="boton">Explorar galería</a>
+            </div>
+
+            <div class="figura">
+                <div class="figura-centro">FLEX</div>
+            </div>
+
+        </section>
+
+        <section id="galeria" class="seccion-galeria">
+
+            <div class="titulo-seccion">
+                <p class="etiqueta">COLECCIÓN</p>
+                <h2>Galería de ideas</h2>
+
+                <p>
+                    Cada elemento está organizado mediante Flexbox para
+                    mantener una distribución ordenada y adaptable.
+                </p>
+            </div>
+
+            <div class="galeria">
+
+                <article class="tarjeta tarjeta-grande">
+                    <div class="numero">01</div>
+                    <div class="icono">◈</div>
+
+                    <h3>Creatividad</h3>
+
+                    <p>
+                        Las ideas pueden transformarse en proyectos
+                        cuando se combinan imaginación y planificación.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="numero">02</div>
+                    <div class="icono">◇</div>
+
+                    <h3>Diseño</h3>
+
+                    <p>
+                        Un buen diseño permite presentar la información
+                        de manera clara, atractiva y ordenada.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="numero">03</div>
+                    <div class="icono">✧</div>
+
+                    <h3>Tecnología</h3>
+
+                    <p>
+                        Las herramientas digitales permiten convertir
+                        una idea en una experiencia interactiva.
+                    </p>
+                </article>
+
+                <article class="tarjeta tarjeta-ancha">
+                    <div class="numero">04</div>
+                    <div class="icono">✦</div>
+
+                    <h3>Flexibilidad</h3>
+
+                    <p>
+                        Flexbox permite distribuir y alinear los elementos
+                        de una página de manera flexible y adaptable.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="sobre" class="explicacion">
+
+            <div class="explicacion-titulo">
+                <p class="etiqueta">¿CÓMO FUNCIONA?</p>
+                <h2>El uso de Flexbox</h2>
+            </div>
+
+            <div class="conceptos">
+
+                <div class="concepto">
+                    <strong>01</strong>
+                    <h3>display: flex</h3>
+
+                    <p>
+                        Activa Flexbox en un contenedor y permite organizar
+                        sus elementos de manera flexible.
+                    </p>
+                </div>
+
+                <div class="concepto">
+                    <strong>02</strong>
+                    <h3>justify-content</h3>
+
+                    <p>
+                        Permite controlar la distribución de los elementos
+                        sobre el eje principal.
+                    </p>
+                </div>
+
+                <div class="concepto">
+                    <strong>03</strong>
+                    <h3>align-items</h3>
+
+                    <p>
+                        Permite alinear los elementos sobre el eje
+                        transversal del contenedor.
+                    </p>
+                </div>
+
+                <div class="concepto">
+                    <strong>04</strong>
+                    <h3>flex-wrap</h3>
+
+                    <p>
+                        Permite que los elementos pasen a una nueva línea
+                        cuando no existe suficiente espacio.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Práctico 1 · Maquetando con Flexbox</p>
+        <p>Diseñado con HTML5 y CSS3</p>
+    </footer>
+
+</body>
+</html>
